@@ -39,6 +39,14 @@ public class LinkedList {
 		}
 	}
 	/*
+	 * Method Name=deleteFirst
+	 * Logic for deleting the first element
+	 */
+	public void deleteFirst()
+	{
+		head = head.ref;
+	}
+	/*
 	 * Logic for displaying the added elements
 	 */
 	public void display() {

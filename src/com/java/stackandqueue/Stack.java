@@ -9,12 +9,16 @@ public class Stack {
 	 * creating the LinkedList class object
 	 */
 	LinkedList list = new LinkedList();
-
-	public void push(Object data) {
+	public void push(Object data)
+	{
 		list.addLast(data);
 	}
-
-	public void display() {
+	public void pop()
+	{
+		list.deleteFirst();
+	}
+	public void display()
+	{
 		list.display();
 	}
 
@@ -22,13 +26,17 @@ public class Stack {
 	 * Program execution starts from main method
 	 */
 	public static void main(String[] args) {
-		System.out.println("Welcome to the LinkedList Stack and Queue Program");
+		System.out.println("Welcome to Stack and Queue Data structure");
 		Stack stack = new Stack();
 		stack.push(56);
-		stack.display();
 		stack.push(30);
-		stack.display();
 		stack.push(70);
+		stack.display();
+		stack.pop();
+		stack.display();
+		stack.pop();
+		stack.display();
+		stack.pop();
 		stack.display();
 	}
 
