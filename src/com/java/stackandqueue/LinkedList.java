@@ -17,6 +17,18 @@ public class LinkedList {
 			this.data = data;
 		}
 	}
+	/*
+	 * Method Name:addFirst
+	 * Logic for adding Data to the first like 
+	 * 70
+     * 30=>70
+     * 56=>30=>70
+	 */
+	public void addFirstNode(Object data) {
+		Node newNode = new Node(data);
+		newNode.ref = head;
+		head = newNode;
+	}
 	/*Method Name:addLast
 	 * Logic for adding data for Last like
 	 * 56
